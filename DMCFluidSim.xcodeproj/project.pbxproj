@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD7DEF962752E14E005F31C9 /* DMCWingWorks in Frameworks */ = {isa = PBXBuildFile; productRef = FD7DEF952752E14E005F31C9 /* DMCWingWorks */; };
+		FD7DEF982752E14E005F31C9 /* DMCWingWorksRender in Frameworks */ = {isa = PBXBuildFile; productRef = FD7DEF972752E14E005F31C9 /* DMCWingWorksRender */; };
+		FD7DEF9B2752E167005F31C9 /* DMCLatticeBoltzmann in Frameworks */ = {isa = PBXBuildFile; productRef = FD7DEF9A2752E167005F31C9 /* DMCLatticeBoltzmann */; };
+		FD7DEF9D2752E167005F31C9 /* DMCLatticeBoltzmannRender in Frameworks */ = {isa = PBXBuildFile; productRef = FD7DEF9C2752E167005F31C9 /* DMCLatticeBoltzmannRender */; };
+		FD93067227482EDD00BD0D18 /* DMCFluidSimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93067127482EDD00BD0D18 /* DMCFluidSimApp.swift */; };
+		FD93067427482EDD00BD0D18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93067327482EDD00BD0D18 /* ContentView.swift */; };
+		FD93067627482EDE00BD0D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD93067527482EDE00BD0D18 /* Assets.xcassets */; };
+		FD93067927482EDE00BD0D18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD93067827482EDE00BD0D18 /* Preview Assets.xcassets */; };
+		FD93068427482EDE00BD0D18 /* DMCFluidSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93068327482EDE00BD0D18 /* DMCFluidSimTests.swift */; };
+		FD93068E27482EDE00BD0D18 /* DMCFluidSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93068D27482EDE00BD0D18 /* DMCFluidSimUITests.swift */; };
+		FD93069027482EDE00BD0D18 /* DMCFluidSimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93068F27482EDE00BD0D18 /* DMCFluidSimUITestsLaunchTests.swift */; };
+		FD93069D2748310D00BD0D18 /* FoilShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93069C2748310D00BD0D18 /* FoilShape.swift */; };
+		FD93069F2748313E00BD0D18 /* WorldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD93069E2748313E00BD0D18 /* WorldConfig.swift */; };
+		FD9306A52749990900BD0D18 /* SimControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306A42749990900BD0D18 /* SimControlView.swift */; };
+		FD9306A72749A05C00BD0D18 /* SimControlModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306A62749A05C00BD0D18 /* SimControlModelInterface.swift */; };
+		FD9306A92749BCDF00BD0D18 /* SimControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306A82749BCDF00BD0D18 /* SimControlModel.swift */; };
+		FD9306B72749C55400BD0D18 /* SimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306B62749C55400BD0D18 /* SimulationController.swift */; };
+		FD9306B92749C89600BD0D18 /* ParticleSimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306B82749C89600BD0D18 /* ParticleSimController.swift */; };
+		FD9306BB2749C8FF00BD0D18 /* LBMSimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306BA2749C8FF00BD0D18 /* LBMSimController.swift */; };
+		FD930700274C0CBF00BD0D18 /* LeadingEdgeHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306FC274C0CBF00BD0D18 /* LeadingEdgeHandle.swift */; };
+		FD930701274C0CBF00BD0D18 /* TrailingEdgeHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306FD274C0CBF00BD0D18 /* TrailingEdgeHandle.swift */; };
+		FD930702274C0CBF00BD0D18 /* FoilConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9306FE274C0CBF00BD0D18 /* FoilConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD93068027482EDE00BD0D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD93066627482EDD00BD0D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD93066D27482EDD00BD0D18;
+			remoteInfo = WindTunnel;
+		};
+		FD93068A27482EDE00BD0D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD93066627482EDD00BD0D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD93066D27482EDD00BD0D18;
+			remoteInfo = WindTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD93066E27482EDD00BD0D18 /* DMCFluidSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMCFluidSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD93067127482EDD00BD0D18 /* DMCFluidSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCFluidSimApp.swift; sourceTree = "<group>"; };
+		FD93067327482EDD00BD0D18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD93067527482EDE00BD0D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD93067827482EDE00BD0D18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD93067A27482EDE00BD0D18 /* DMCFluidSim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DMCFluidSim.entitlements; sourceTree = "<group>"; };
+		FD93067F27482EDE00BD0D18 /* DMCFluidSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMCFluidSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD93068327482EDE00BD0D18 /* DMCFluidSimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCFluidSimTests.swift; sourceTree = "<group>"; };
+		FD93068927482EDE00BD0D18 /* DMCFluidSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMCFluidSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD93068D27482EDE00BD0D18 /* DMCFluidSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCFluidSimUITests.swift; sourceTree = "<group>"; };
+		FD93068F27482EDE00BD0D18 /* DMCFluidSimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCFluidSimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD93069C2748310D00BD0D18 /* FoilShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoilShape.swift; sourceTree = "<group>"; };
+		FD93069E2748313E00BD0D18 /* WorldConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldConfig.swift; sourceTree = "<group>"; };
+		FD9306A42749990900BD0D18 /* SimControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimControlView.swift; sourceTree = "<group>"; };
+		FD9306A62749A05C00BD0D18 /* SimControlModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimControlModelInterface.swift; sourceTree = "<group>"; };
+		FD9306A82749BCDF00BD0D18 /* SimControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimControlModel.swift; sourceTree = "<group>"; };
+		FD9306B62749C55400BD0D18 /* SimulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationController.swift; sourceTree = "<group>"; };
+		FD9306B82749C89600BD0D18 /* ParticleSimController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSimController.swift; sourceTree = "<group>"; };
+		FD9306BA2749C8FF00BD0D18 /* LBMSimController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBMSimController.swift; sourceTree = "<group>"; };
+		FD9306FC274C0CBF00BD0D18 /* LeadingEdgeHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadingEdgeHandle.swift; sourceTree = "<group>"; };
+		FD9306FD274C0CBF00BD0D18 /* TrailingEdgeHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailingEdgeHandle.swift; sourceTree = "<group>"; };
+		FD9306FE274C0CBF00BD0D18 /* FoilConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoilConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD93066B27482EDD00BD0D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7DEF9D2752E167005F31C9 /* DMCLatticeBoltzmannRender in Frameworks */,
+				FD7DEF962752E14E005F31C9 /* DMCWingWorks in Frameworks */,
+				FD7DEF982752E14E005F31C9 /* DMCWingWorksRender in Frameworks */,
+				FD7DEF9B2752E167005F31C9 /* DMCLatticeBoltzmann in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD93067C27482EDE00BD0D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD93068627482EDE00BD0D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD28AE302752CFB400FDDFD3 /* ViewsAndShapes */ = {
+			isa = PBXGroup;
+			children = (
+				FD93067327482EDD00BD0D18 /* ContentView.swift */,
+				FD93069C2748310D00BD0D18 /* FoilShape.swift */,
+				FD9306FC274C0CBF00BD0D18 /* LeadingEdgeHandle.swift */,
+				FD9306FD274C0CBF00BD0D18 /* TrailingEdgeHandle.swift */,
+				FD9306A42749990900BD0D18 /* SimControlView.swift */,
+			);
+			path = ViewsAndShapes;
+			sourceTree = "<group>";
+		};
+		FD93066527482EDD00BD0D18 = {
+			isa = PBXGroup;
+			children = (
+				FD9306A02748330200BD0D18 /* Packages */,
+				FD93067027482EDD00BD0D18 /* DMCFluidSim */,
+				FD93068227482EDE00BD0D18 /* DMCFluidSimTests */,
+				FD93068C27482EDE00BD0D18 /* DMCFluidSimUITests */,
+				FD93066F27482EDD00BD0D18 /* Products */,
+				FD9306AA2749BF1800BD0D18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD93066F27482EDD00BD0D18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD93066E27482EDD00BD0D18 /* DMCFluidSim.app */,
+				FD93067F27482EDE00BD0D18 /* DMCFluidSimTests.xctest */,
+				FD93068927482EDE00BD0D18 /* DMCFluidSimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD93067027482EDD00BD0D18 /* DMCFluidSim */ = {
+			isa = PBXGroup;
+			children = (
+				FD28AE302752CFB400FDDFD3 /* ViewsAndShapes */,
+				FD9306B32749C3AC00BD0D18 /* SimulationModels */,
+				FD9306FE274C0CBF00BD0D18 /* FoilConfig.swift */,
+				FD93069E2748313E00BD0D18 /* WorldConfig.swift */,
+				FD93067127482EDD00BD0D18 /* DMCFluidSimApp.swift */,
+				FD93067527482EDE00BD0D18 /* Assets.xcassets */,
+				FD93067A27482EDE00BD0D18 /* DMCFluidSim.entitlements */,
+				FD93067727482EDE00BD0D18 /* Preview Content */,
+			);
+			path = DMCFluidSim;
+			sourceTree = "<group>";
+		};
+		FD93067727482EDE00BD0D18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD93067827482EDE00BD0D18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD93068227482EDE00BD0D18 /* DMCFluidSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD93068327482EDE00BD0D18 /* DMCFluidSimTests.swift */,
+			);
+			path = DMCFluidSimTests;
+			sourceTree = "<group>";
+		};
+		FD93068C27482EDE00BD0D18 /* DMCFluidSimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD93068D27482EDE00BD0D18 /* DMCFluidSimUITests.swift */,
+				FD93068F27482EDE00BD0D18 /* DMCFluidSimUITestsLaunchTests.swift */,
+			);
+			path = DMCFluidSimUITests;
+			sourceTree = "<group>";
+		};
+		FD9306A02748330200BD0D18 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		FD9306AA2749BF1800BD0D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD9306B32749C3AC00BD0D18 /* SimulationModels */ = {
+			isa = PBXGroup;
+			children = (
+				FD9306A62749A05C00BD0D18 /* SimControlModelInterface.swift */,
+				FD9306A82749BCDF00BD0D18 /* SimControlModel.swift */,
+				FD9306B62749C55400BD0D18 /* SimulationController.swift */,
+				FD9306B82749C89600BD0D18 /* ParticleSimController.swift */,
+				FD9306BA2749C8FF00BD0D18 /* LBMSimController.swift */,
+			);
+			path = SimulationModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD93066D27482EDD00BD0D18 /* DMCFluidSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD93069327482EDE00BD0D18 /* Build configuration list for PBXNativeTarget "DMCFluidSim" */;
+			buildPhases = (
+				FD93066A27482EDD00BD0D18 /* Sources */,
+				FD93066B27482EDD00BD0D18 /* Frameworks */,
+				FD93066C27482EDD00BD0D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMCFluidSim;
+			packageProductDependencies = (
+				FD7DEF952752E14E005F31C9 /* DMCWingWorks */,
+				FD7DEF972752E14E005F31C9 /* DMCWingWorksRender */,
+				FD7DEF9A2752E167005F31C9 /* DMCLatticeBoltzmann */,
+				FD7DEF9C2752E167005F31C9 /* DMCLatticeBoltzmannRender */,
+			);
+			productName = WindTunnel;
+			productReference = FD93066E27482EDD00BD0D18 /* DMCFluidSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD93067E27482EDE00BD0D18 /* DMCFluidSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD93069627482EDE00BD0D18 /* Build configuration list for PBXNativeTarget "DMCFluidSimTests" */;
+			buildPhases = (
+				FD93067B27482EDE00BD0D18 /* Sources */,
+				FD93067C27482EDE00BD0D18 /* Frameworks */,
+				FD93067D27482EDE00BD0D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD93068127482EDE00BD0D18 /* PBXTargetDependency */,
+			);
+			name = DMCFluidSimTests;
+			productName = WindTunnelTests;
+			productReference = FD93067F27482EDE00BD0D18 /* DMCFluidSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD93068827482EDE00BD0D18 /* DMCFluidSimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD93069927482EDE00BD0D18 /* Build configuration list for PBXNativeTarget "DMCFluidSimUITests" */;
+			buildPhases = (
+				FD93068527482EDE00BD0D18 /* Sources */,
+				FD93068627482EDE00BD0D18 /* Frameworks */,
+				FD93068727482EDE00BD0D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD93068B27482EDE00BD0D18 /* PBXTargetDependency */,
+			);
+			name = DMCFluidSimUITests;
+			productName = WindTunnelUITests;
+			productReference = FD93068927482EDE00BD0D18 /* DMCFluidSimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD93066627482EDD00BD0D18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FD93066D27482EDD00BD0D18 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FD93067E27482EDE00BD0D18 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FD93066D27482EDD00BD0D18;
+					};
+					FD93068827482EDE00BD0D18 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FD93066D27482EDD00BD0D18;
+					};
+				};
+			};
+			buildConfigurationList = FD93066927482EDD00BD0D18 /* Build configuration list for PBXProject "DMCFluidSim" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD93066527482EDD00BD0D18;
+			packageReferences = (
+				FD7DEF942752E14E005F31C9 /* XCRemoteSwiftPackageReference "DMCWingWorks" */,
+				FD7DEF992752E167005F31C9 /* XCRemoteSwiftPackageReference "DMCLatticeBoltzmann" */,
+			);
+			productRefGroup = FD93066F27482EDD00BD0D18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD93066D27482EDD00BD0D18 /* DMCFluidSim */,
+				FD93067E27482EDE00BD0D18 /* DMCFluidSimTests */,
+				FD93068827482EDE00BD0D18 /* DMCFluidSimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD93066C27482EDD00BD0D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD93067927482EDE00BD0D18 /* Preview Assets.xcassets in Resources */,
+				FD93067627482EDE00BD0D18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD93067D27482EDE00BD0D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD93068727482EDE00BD0D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD93066A27482EDD00BD0D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD93069D2748310D00BD0D18 /* FoilShape.swift in Sources */,
+				FD9306B72749C55400BD0D18 /* SimulationController.swift in Sources */,
+				FD9306A92749BCDF00BD0D18 /* SimControlModel.swift in Sources */,
+				FD930700274C0CBF00BD0D18 /* LeadingEdgeHandle.swift in Sources */,
+				FD9306A72749A05C00BD0D18 /* SimControlModelInterface.swift in Sources */,
+				FD93067427482EDD00BD0D18 /* ContentView.swift in Sources */,
+				FD93069F2748313E00BD0D18 /* WorldConfig.swift in Sources */,
+				FD93067227482EDD00BD0D18 /* DMCFluidSimApp.swift in Sources */,
+				FD9306BB2749C8FF00BD0D18 /* LBMSimController.swift in Sources */,
+				FD930701274C0CBF00BD0D18 /* TrailingEdgeHandle.swift in Sources */,
+				FD9306B92749C89600BD0D18 /* ParticleSimController.swift in Sources */,
+				FD9306A52749990900BD0D18 /* SimControlView.swift in Sources */,
+				FD930702274C0CBF00BD0D18 /* FoilConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD93067B27482EDE00BD0D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD93068427482EDE00BD0D18 /* DMCFluidSimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD93068527482EDE00BD0D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD93069027482EDE00BD0D18 /* DMCFluidSimUITestsLaunchTests.swift in Sources */,
+				FD93068E27482EDE00BD0D18 /* DMCFluidSimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD93068127482EDE00BD0D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD93066D27482EDD00BD0D18 /* DMCFluidSim */;
+			targetProxy = FD93068027482EDE00BD0D18 /* PBXContainerItemProxy */;
+		};
+		FD93068B27482EDE00BD0D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD93066D27482EDD00BD0D18 /* DMCFluidSim */;
+			targetProxy = FD93068A27482EDE00BD0D18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD93069127482EDE00BD0D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD93069227482EDE00BD0D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FD93069427482EDE00BD0D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DMCFluidSim/DMCFluidSim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DMCFluidSim/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmoonc.DMCFluidSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FD93069527482EDE00BD0D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DMCFluidSim/DMCFluidSim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DMCFluidSim/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmoonc.DMCFluidSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FD93069727482EDE00BD0D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmoonc.DMCFluidSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMCFluidSim.app/Contents/MacOS/DMCFluidSim";
+			};
+			name = Debug;
+		};
+		FD93069827482EDE00BD0D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmoonc.DMCFluidSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DMCFluidSim.app/Contents/MacOS/DMCFluidSim";
+			};
+			name = Release;
+		};
+		FD93069A27482EDE00BD0D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmoonc.DMCFluidSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DMCFluidSim;
+			};
+			name = Debug;
+		};
+		FD93069B27482EDE00BD0D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmoonc.DMCFluidSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DMCFluidSim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD93066927482EDD00BD0D18 /* Build configuration list for PBXProject "DMCFluidSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD93069127482EDE00BD0D18 /* Debug */,
+				FD93069227482EDE00BD0D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD93069327482EDE00BD0D18 /* Build configuration list for PBXNativeTarget "DMCFluidSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD93069427482EDE00BD0D18 /* Debug */,
+				FD93069527482EDE00BD0D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD93069627482EDE00BD0D18 /* Build configuration list for PBXNativeTarget "DMCFluidSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD93069727482EDE00BD0D18 /* Debug */,
+				FD93069827482EDE00BD0D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD93069927482EDE00BD0D18 /* Build configuration list for PBXNativeTarget "DMCFluidSimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD93069A27482EDE00BD0D18 /* Debug */,
+				FD93069B27482EDE00BD0D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD7DEF942752E14E005F31C9 /* XCRemoteSwiftPackageReference "DMCWingWorks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchapman87501/DMCWingWorks";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		FD7DEF992752E167005F31C9 /* XCRemoteSwiftPackageReference "DMCLatticeBoltzmann" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchapman87501/DMCLatticeBoltzmann";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD7DEF952752E14E005F31C9 /* DMCWingWorks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD7DEF942752E14E005F31C9 /* XCRemoteSwiftPackageReference "DMCWingWorks" */;
+			productName = DMCWingWorks;
+		};
+		FD7DEF972752E14E005F31C9 /* DMCWingWorksRender */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD7DEF942752E14E005F31C9 /* XCRemoteSwiftPackageReference "DMCWingWorks" */;
+			productName = DMCWingWorksRender;
+		};
+		FD7DEF9A2752E167005F31C9 /* DMCLatticeBoltzmann */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD7DEF992752E167005F31C9 /* XCRemoteSwiftPackageReference "DMCLatticeBoltzmann" */;
+			productName = DMCLatticeBoltzmann;
+		};
+		FD7DEF9C2752E167005F31C9 /* DMCLatticeBoltzmannRender */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD7DEF992752E167005F31C9 /* XCRemoteSwiftPackageReference "DMCLatticeBoltzmann" */;
+			productName = DMCLatticeBoltzmannRender;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FD93066627482EDD00BD0D18 /* Project object */;
+}
